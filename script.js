@@ -66,7 +66,7 @@ $.getJSON("https://api.covid19india.org/data.json",
         $("div#confvalue").html(total.confirmed);
         $("div#deathsvalue").html(total.deaths);
         $("div#recoveredvalue").html(total.recovered);
-        $("strong#last-updated").html(getLocalTime(lastupdatedtime));
+        $("strong#last-updated").html(getLocalTime(key_values.lastupdatedtime));
 
         if(key_values.confirmeddelta)$("div#confirmed_delta").html("( +"+key_values.confirmeddelta+")");
         if(key_values.deceaseddelta) $("div#deaths_delta").html("( +"+key_values.deceaseddelta+")");
